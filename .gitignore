@@ -75,7 +75,7 @@ tmp/
 .env.test
 .env.*.local
 application.properties
-
+application.yml
 # 기타 설정 파일
 *.swp
 *.swo
