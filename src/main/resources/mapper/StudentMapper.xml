@@ -17,9 +17,25 @@
             </if>
         </where>
     </select>
-
+    <!--내가 작성한 코드-->
     <insert id="insertStudent" parameterType="com.estsoft.springmybatis.model.Students">
         INSERT INTO students (name, age, address)
         VALUES (#{name}, #{age}, #{address})
     </insert>
+    <!--실습 코드-->
+    <insert id="saveStudent" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO students (name, age, address)
+        VALUES (#{name}, #{age}, #{address})
+    </insert>
+
+    <update id="updateStudent">
+        UPDATE students
+        SET name = #{name}, age = #{age}, address = #{address}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="deleteStudent">
+        DELETE FROM students
+        WHERE id = #{id}
+    </delete>
 </mapper>

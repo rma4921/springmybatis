@@ -39,4 +39,7 @@ public class Students {
     public void setAge(int age) {
         this.age = age;
     }
+    public void setId(int id) {
+        this.id = id;
+    }
 }

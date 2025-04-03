@@ -19,7 +19,20 @@ public class StudentService {
     public List<Students> selectStudents(Long id) {
         return studentMapper.selectStudents(id);
     }
+    // 작성해본 코드
     public void insertStudent(Students students) {
         studentMapper.insertStudent(students);
+    }
+    // 실습 코드
+    public int saveStudent(Students students) {
+        return studentMapper.saveStudent(students);
+    }
+
+    public int updateStudent(Students students) {
+        return studentMapper.updateStudent(students);
+    }
+
+    public int deleteStudent(Long id) {
+        return studentMapper.deleteStudent(id);
     }
 }

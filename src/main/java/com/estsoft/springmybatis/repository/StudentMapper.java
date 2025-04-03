@@ -12,7 +12,12 @@ public interface StudentMapper {
 
     List<Students> selectStudents(Long id);
 
+    // 작성해본 코드
     void insertStudent(Students students);
+    // 실습 코드
+    int saveStudent(Students students);
 
-    //void saveStudent(Students students);
+    int updateStudent(Students students);
+
+    int deleteStudent(Long id);
 }
